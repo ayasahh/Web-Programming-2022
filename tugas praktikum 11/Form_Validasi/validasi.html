@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validasi</title>
+    <link rel="stylesheet" href="CSS/validasi.css">
+    <script src="autentikasi.js"></script>
+
+</head>
+<body>
+    <div class="form-container">
+        <form action="" method="POST">
+            <h1>Form</h1>
+            <div class="container">
+                <label>Nama Pelanggan</label>
+                <input type="text" name="name" id="nama" maxlength="30">
+                <label>Email </label>
+                <input type="email" name="email" id="email">
+                <label>Jam Keberangkatan</label>
+                <input type="time" name="" id="jam">
+                <br />
+                <label>Tujuan Keberangkatan</label>
+                <input type="text" name="tujuan" id="tujuan">
+                <label>Jumlah Tiket</label>
+                <input type="number" name="tiket" id="tiket" max="10">
+            </div>
+        </form>
+        <button onclick="tiket()">Submit</button>
+    
+    <div class="container_hasil">
+        <h1 id="hasil"></h1>
+        <p id="hasil_nama"></p>
+        <p id="hasil_email"></p>
+        <p id="hasil_jam"></p>
+        <p id="hasil_tujuan"></p>
+        <p id="hasil_tiket"></p>
+    </div>
+</body>
+</html>

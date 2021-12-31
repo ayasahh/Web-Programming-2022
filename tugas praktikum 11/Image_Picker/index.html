@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/picker.css">
+    <title>Pilih Gambar</title>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="container-image">
+            <h1>Image Picker</h1>
+            <div class="select-img">
+                <select name="select_img" id="select_img" onchange="gantiGambar();">
+                    <option id="g1" value="1">Monkey</option>
+                    <option id="g2" value="2">Beautiful scenery</option>
+                    <option id="g3" value="3">Bicycle</option>
+                    <option id="g4" value="4">Food</option>
+                    <option id="g5" value="5">Train</option>
+                    <option id="g6" value="6">Moon</option>
+                </select>
+            </div>
+            <div class="change-img" style="margin-top: 40px;">
+                <img id="imgDefault" src="Picture/monkey.jfif" style="width: 200px;">
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function gantiGambar() {
+            var getSelect = document.getElementById('select_img').value;
+
+            var g1 = document.getElementById('g1').value;
+            var g2 = document.getElementById('g2').value;
+            var g3 = document.getElementById('g3').value;
+            var g4 = document.getElementById('g4').value;
+            var g5 = document.getElementById('g5').value;
+            var g6 = document.getElementById('g6').value;
+
+            var imgDefault = document.getElementById('imgDefault');
+
+            if (getSelect == g2) {
+                imgDefault.src = 'picture/beautiful scenery.jfif';
+                alert('this is beautiful scenery image');
+            }
+            else if (getSelect == g3) {
+                imgDefault.src = 'picture/bicycle.jfif';
+                alert('this is bicycle image');
+            }
+            else if (getSelect == g4) {
+                imgDefault.src = 'picture/food.jfif';
+                alert('this is food image');
+            }
+            else if (getSelect == g5) {
+                imgDefault.src = 'picture/train.jfif';
+                alert('this is train image');
+            } else if (getSelect == g6) {
+                imgDefault.src = 'picture/moon.jfif';
+                alert('this is moon image');
+            } else {
+                imgDefault.src = 'picture/monkey.jfif';
+                alert('this is monkey image');
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+.Box{
+    position: relative;
+    width: 1135px;
+    height: 680px;
+    background-color: white;
+    margin: auto;
+}
+
+.Box1{
+    float: left;
+    width: 30cm;
+    height: 3cm;
+    background-color: royalblue;
+    margin-left: 0.1cm;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: 2px solid black;
+
+}
+
+.Box2{
+    float: left;
+    width: 6cm;
+    height: 6cm;
+    background-color: gray;
+    margin-left: 0.1em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    border: 2px solid black;
+
+}
+
+.Box3{
+    float: left;
+    width: 75%;
+    height: 6cm;
+    background-color: aqua;
+    margin-left: 2em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    border: 2px solid black;
+
+}
+
+.Box4{
+    float: left;
+    width: 6cm;
+    height: 5cm;
+    background-color: blueviolet;
+    margin-left: 0.1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: 2px solid black;
+
+}
+
+.Box5{
+    float: left;
+    width: 75%;
+    height: 5cm;
+    background-color: forestgreen;
+    margin-left: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: 2px solid black;
+
+}
+
